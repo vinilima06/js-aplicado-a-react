@@ -12,7 +12,15 @@
 
 
 
-    //1ª Digitação (aqui) 
+    //Função sintaxe tradicional
+    function nomeDaFuncao() {
+      exibirNaTela('Função de sintaxe tradicional');
+    } 
+
+    // Função anônima 
+    var outraFuncao= function() {
+      exibirNaTela('Outra forma de declarar função...');
+    }
 
 
 
@@ -27,8 +35,11 @@
     para uma variável externa */
 
 
+    function exercício(valor1,valor2) {
+      return valor1 - valor2;
+    }
 
-    //2ª Digitação (aqui) 
+    let resultado = exercício(10,3);
 
 
 
@@ -45,7 +56,7 @@
 
     const ola = nome => exibirNaTela('Olá ' + nome);
 
-    ola('Ignacio');
+    ola('Vini Lima');
 
     // Versão simplificada (Arrow function com retorno IMPLÍCITO)
     const metade = valor => valor / 2;
@@ -68,7 +79,12 @@
 
     
 
-    //3ª Digitação (aqui) 
+    let converterMaiuscula = nome => nome.toUpperCase();
+
+    exibirNaTela(converterMaiuscula('Vini Lima'));
+    exibirNaTela(converterMaiuscula('Vini Lima'));
+    exibirNaTela(converterMaiuscula('Vini Lima'));
+    
 
 
 
